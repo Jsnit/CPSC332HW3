@@ -26,20 +26,38 @@
         height: auto;
         grid-column: 1 / 2; /* Image will be placed in the first column */
         }
+        #intro li {
+            list-style-type: ">>";
+        }
         #career {
             background: rgb(117, 10, 10);
             grid-column: 2/3;
             grid-row: 2/3;
+        }
+        #career table tr:nth-child(odd) td{
+           background:#0065fc;
+        }
+        #career table tr:nth-child(even) td{
+            background:#26763f;
         }
         #education {
             background: rgb(158, 158, 12);
             grid-column: 2/3;
             grid-row: 3/4;
         }
+        #education table tr:nth-child(odd) td{
+           background:#ed0af5;
+        }
+        #education table tr:nth-child(even) td{
+            background:#0da76c;
+        }
         #hobbies {
             background: rgb(28, 72, 7);
             grid-column: 2/3;
             grid-row: 4/5;
+        }
+        #hobbies li {
+            list-style-type: "--";
         }
     </style>
     <meta charset="UTF-8">
@@ -51,10 +69,12 @@
     <div id = "grid-container">
         <div id = "links-header">
             <img src="voidMageReferencePic.jpg" alt="Header Photo">
-            <a href="index.html#intro-link"> Introduction Page </a>
-            <a href="index.html#career-link"> Career Page </a>
-            <a href="index.html#education-link"> Education Page </a>
-            <a href="index.html#hobbies-link"> Hobbies Page </a>
+            <nav>
+                <a href="index.html#intro-link"> Introduction Page </a>
+                <a href="index.html#career-link"> Career Page </a>
+                <a href="index.html#education-link"> Education Page </a>
+                <a href="index.html#hobbies-link"> Hobbies Page </a>
+            </nav>
         </div>
 
         <div id = "intro">
