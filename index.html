@@ -1,16 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        #grid-container {           
+            background: rgb(42, 129, 216);
+            display: grid;
+            grid-template-columns: 33% 67%;
+            gap: 5px 5px;
+        }
+        #grid-container > div {
+        background: rgb(50, 183, 255);
+        }
+        #links-header {
+            grid-column: 1/3;
+        }
+        #intro {
+            grid-column: 1/2;
+            grid-row: 2/5;
+        }
+        #career {
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        #education {
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+        #hobbies {
+            grid-column: 2/3;
+            grid-row: 4/5;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> doc </title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>Header</header>
-    <nav>Nav</nav>  
-    <article>Article</article>
-    <aside>Aside</aside>
-    <footer>Footer</footer>
- </body>
+    <div id = "grid-container">
+        <div id = "links-header">
+            <a href="index.html#intro-link"> Introduction Page </a>
+            <a href="index.html#career-link"> Career Page </a>
+            <a href="index.html#education-link"> Education Page </a>
+            <a href="index.html#hobbies-link"> Hobbies Page </a>
+        </div>
+
+        <div id = "intro">
+            <a id = "intro-link"></a>
+            <p> 
+                Hello, my name is Jake Snitily, and I am a motivated and passionate student at Gonzaga University pursuing a B.S in Computer Science with a
+                concentration in Cyber Security. I have a love for all things problem solving, and I excel when I'm directing
+                projects and managing resources to ensure the success of a team. I am a long-time rock climber and skiier, and
+                I love to be outdoors. Theres no better day to me, than a day I can completely unplug and be in remote nature.
+            </p>
+            <img src="profilePic.jpg" alt="Profile Image">
+            <h1> Core Skills </h1>
+            <ul>
+                <li> Problem Solving </li>
+                <li> Project Management </li>
+                <li> Determination </li>
+            </ul>
+        </div>
+
+        <div id = "career">
+            <a id = "career-link"></a>
+            <h1>This is a summary of Jake Snitily's employment history</h1>
+            <table>
+                <tr>
+                    <th> Job Position </th>
+                    <th> Company </th>
+                    <th> Responsibilites </th>
+                </tr>
+                <tr>
+                    <td> Lift Operator </td>
+                    <td> Mission Ridge Ski Resort </td>
+                    <td> Managed loading and unloading operations in high-stress situations. This required
+                        <ul>
+                            <li>Quick reaction times to shutdown machinery & rescue people in dangerous situations</li>
+                            <li>Operate lift machinery with confidence in its mechanisms</li>
+                            <li>Push past both boredom & fear in order to keep others safe </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td> Junior Project Manager </td>
+                    <td> Apollo Construction Inc. </td>
+                    <td> Assisted laborers and equipment operators in day-to-day construction practices. This required
+                        <ul>
+                            <li>Manual labor, Equipment inspection, and Crew check-ins</li>
+                            <li>Troubleshooting equipment, connections, and materials</li>
+                            <li>Site wide OSHA standard safety inspections</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td> Enterprise Technology Intern </td>
+                    <td> Grant County PUD </td>
+                    <td> As a rising sophomore, I took on a hybrid role (70% in-person, 30% remote) that dove into the five Enterprise Technology departments, (Quality Assurance, Enterprise App Dev, Service Desk, Telecom Engineering, & Cyber Security) for individual 2–4-week sprints over the course of the summer. Some of the most insightful experiences were
+                        <ul>
+                            <li>Cyber Security: MS 365 Defender ASR rule examination, Research assisting in defining penetration testing standards for the Public Utility District,                </li>
+                            <li>Quality Assurance: In-House PowerApps test case creation and execution, Bug creation process through Azure DevOps, SDLC monitoring & support through the Business Analyst perspective</li>
+                            <li>Service Desk: Organized a P.U.D wide System Hardware Audit spanning five On-Site locations across three cities, Assisting employees through E.T application support, Setup workspaces & reimaged personnel machines</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td> Quality Assurance Student Intern </td>
+                    <td> Grant County PUD </td>
+                    <td> As a part-time working sophomore, full-time rising junior, and part-time working junior I worked to ensure the quality & consistency of the in-house Operlog system releases 2, 3, & 4. In this position I have
+                        <ul>
+                            <li>Reduced errors and subsequent product release delays by performing detailed QA testing to ensure code quality</li>
+                            <li>Produced high-level test cases via ADO to identify and perform validation of software applications</li>
+                            <li>Generated comprehensive bug reports for easy reproducibility and conducted bug triage processes</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id = "education">
+            <a id = "education-link"></a>
+            <h1> Education </h1>
+            <table>
+                <tr>
+                    <th> Education level </th>
+                    <th> Institution </th>
+                    <th> Timeperiod </th>
+                    <th> Description </th>
+                </tr>
+                <tr>
+                    <td> High School </td>
+                    <td> Wenatchee High School (WHS)</td>
+                    <td> 2018-2022 </td>
+                    <td> During my four years of highschool, I was able to grow immensely as a person, develop the foundations for many of my hobbies and pursue the life I wanted to live by working towards my goals and making the most of everyday. After two years, my in-person experience was cut short and I switch to remote/hybrid schooling.</td>
+                </tr>
+                <tr>
+                    <td> AA-T degree </td>
+                    <td> Wenatchee Valley College (WVC)</td>
+                    <td> 2020-2022 </td>
+                    <td> While pursuing my HS diploma, I was dual-enrolled with WVC's running start program. Through this incredible opportunity, I was able to obtain both my AA & diploma at the time of my graduation.</td>
+                </tr>
+                <tr>
+                    <td> B.S in Computer Science Concentration: Cyber Security Minor: Stats</td>
+                    <td> Gonzaga University </td>
+                    <td> 2022-2026</td>
+                    <td> I am currently pursuing my Bachelors of Science in Computer Science with a concentration in Cyber Security & a minor in stats. So far, this pathway has provided me with both amazing resources to learn from, and difficult obstacles to overcome in order to grow.</td>
+                </tr>
+            </table>
+
+            <h1> Qualifications </h1>
+            <table>
+                <tr>
+                    <th> Skill </th>
+                    <th> Usefulness </th>
+                    <th> Obtained </th>
+                </tr>
+                <tr>
+                    <td> Design Research </td>
+                    <td> Allows me to research and implement products effieciently & effectively in order to maintain a set schedule, even if the content is knew or unfamiliar to me </td>
+                    <td> Overseeing Operlog release 2, 3, & 4 at Grant County Public Utility District </td>
+                </tr>
+                <tr>
+                    <td> Test Case Generation </td>
+                    <td> Enables me to create and deploy functional test cases for the front-end of software implementations, focusing on individual functional specifications, as well as program wide functionality </td>
+                    <td> Working Hand-in-Hand with Quality Assurance, Dev Ops, and Contracters ensuring Operlog & Apprentice Tracking releases at GCPUD </td>
+                </tr>
+                <tr>
+                    <td> Organizational Leadership </td>
+                    <td> Provide others around me with the tools they need to be successful, and enables myself to be confident in my ability of managing others in their tasks, while still fulfilling my own requirements. </td>
+                    <td> Working with laborers & operators on the job-site, assisting with their operations while also completing my own tasks </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id = "hobbies">
+            <a id = "hobbies-link"></a>
+            <h1> My Interests & Hobbies </h1>
+            <ul>
+                <li>Skiing: I am an avid skiier, and have been going up to the mountain every winter since I could walk. My family has given me the incredible opportunity to continue this passion of mine, and theres nowhere I'd rather be than a ski hill on a powder day</li>
+                <li>Rock Climbing: Ever since I was a kid, my family would go out once or twice a summer and rock climb with my stepdad. It was here that my love grew, and now I am an avid climber as well, even joining the Gonzaga Climbing Club</li>
+                <li>Computers: As makes sense with my major, I am intrigued by all functions of computers, from the hardware its built on to the software it runs on, to the games I can play with it</li>
+            </ul>
+            <p>
+                <a href="https://www.mountainproject.com/area/120379546/leavenworth">
+                    <img src="old_climbing_pic.png" alt="My home rock climbing crag" width="100" height="132">
+                </a>
+            </p>
+        </div>
+    </div>
+</body>
 </html>
